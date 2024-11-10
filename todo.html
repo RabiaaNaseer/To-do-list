@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List-Rabia Naseer</title>
+  <link rel="stylesheet" href="todo.css">
+</head>
+<body class="dark-mode">
+  <header>
+    <h1>Welcome to Your To-Do List</h1>
+    <p>Manage your tasks effectively and stay organized</p>
+    <button id="toggle-btn" onclick="toggleMode()">
+      <span id="mode-icon">🌙</span>
+    </button>
+  </header>
+
+  <main>
+    <section id="task-manager">
+      <div class="input-container">
+        <input type="text" id="new-task" placeholder="Add a new task..." />
+        <button onclick="addTask()">Add Task</button>
+      </div>
+      <ul id="todo-list"></ul>
+    </section>
+
+    <section id="motivational-quotes">
+      <h2>Motivational Quote</h2>
+      <p id="quote">"The secret of getting ahead is getting started." - Mark Twain</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 To-Do List by Rabia Naseer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
